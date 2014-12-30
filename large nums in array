@@ -1,0 +1,14 @@
+Write a JavaScript function that returns array elements larger than a number. 
+
+function largeNums(arr, num){
+    large = [];
+    for(var i =0; i<arr.length; i++){
+        if(arr[i]>num){
+            large.push(arr[i]);
+        }
+    }
+    return large.join(", ")
+}
+
+largeNums([1,2,4,5,78], 4)
+//5, 78
