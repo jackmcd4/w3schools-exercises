@@ -1,0 +1,18 @@
+Write a JavaScript function which says whether a number is perfect.
+
+function perfect(num){
+    factorTotal=0;
+    for(var i=1; i<num; i++){
+        if(num%i===0){
+            factorTotal+=i;
+        }
+    }
+    if(factorTotal===num){
+        return "It is so perfect!";
+    }
+    return "Sigh, so many flaws";
+}
+perfect(8128)
+//It is so perfect!
+perfect(82)
+//Sigh, so many flaws
