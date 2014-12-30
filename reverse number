@@ -1,0 +1,10 @@
+Write a JavaScript function that reverse a number. 
+Example x = 32243;
+Expected Output : 34223
+
+function reverseNum(num){
+    var arr = num.toString().split("").reverse().join("");
+    return +arr;
+}
+reverseNum(123875)
+//578321
