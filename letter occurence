@@ -1,0 +1,17 @@
+Write a JavaScript function that accepts two arguments,
+a string and a letter and the function will count the number
+of occurrences of the specified letter within the string.
+
+function similar(string, letter){
+    count = 0;
+    letter = letter.toLowerCase();
+    string = string.toLowerCase();
+    for(var i=0; i<string.length; i++){
+        if(string[i].match(letter)){
+            count++;
+        }
+    }
+    return count;
+}
+similar("Here is a beautiful string", "e")
+//3
