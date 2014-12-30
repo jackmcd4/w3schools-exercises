@@ -1,0 +1,17 @@
+Write a JavaScript function that accepts a string as a parameter and converts 
+the first letter of each word of the string in upper case. Go to the editor
+Example string : 'the quick brown fox' 
+Expected Output : 'The Quick Brown Fox '
+
+function upcase(string){
+    var arr = string.split("");
+    for(var i=0; i<arr.length; i++){
+        if(arr[i]===" "){
+            arr[i+1]=arr[i+1].toUpperCase();
+        }
+    }
+    arr[0]=arr[0].toUpperCase();
+    return arr.join("");
+}
+upcase("the quick brown fox")
+//"The Quick Brown Fox"
