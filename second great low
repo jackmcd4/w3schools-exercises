@@ -1,0 +1,9 @@
+Write a JavaScript function which will take an array of numbers stored and find
+the second lowest and second greatest numbers, respectively.
+
+function secondLowHigh(arr){
+    arr = arr.sort(function(a,b){return a-b});
+    return arr[1]+", "+arr[arr.length-2];
+}
+secondLowHigh([32,1,8,123,44])
+//8, 44
